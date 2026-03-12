@@ -1,0 +1,10 @@
+node_modules
+dist
+.cache
+.local
+attached_assets
+.replit
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
