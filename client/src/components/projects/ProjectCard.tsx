@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import { Github, ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
@@ -39,11 +39,11 @@ export default function ProjectCard({ title, description, tags, link, index }: P
         </CardContent>
         <CardFooter className="pt-6">
           <div className="flex gap-4 w-full">
-            <Button variant="outline" className="w-full gap-2" asChild>
+            <AnimatedButton variant="outline" className="w-full gap-2" asChild>
               <a href={link} target="_blank" rel="noopener noreferrer">
                 <Github className="w-4 h-4" /> Source Code
               </a>
-            </Button>
+            </AnimatedButton>
           </div>
         </CardFooter>
       </Card>

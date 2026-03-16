@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import heroBg from "@assets/generated_images/abstract_tech_background_with_blue_data_lines.png";
 import { personalInfo } from "@/lib/data";
 
@@ -65,14 +65,14 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <Link href="/projects">
-              <Button size="lg" className="gap-2 text-base">
+              <AnimatedButton size="lg" className="gap-2 text-base">
                 View Projects <ArrowRight className="w-4 h-4" />
-              </Button>
+              </AnimatedButton>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="text-base">
+              <AnimatedButton size="lg" variant="outline" className="text-base">
                 Contact Me
-              </Button>
+              </AnimatedButton>
             </Link>
           </motion.div>
 

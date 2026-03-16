@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SectionHeader from "@/components/ui/section-header";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { personalInfo } from "@/lib/data";
@@ -117,9 +117,9 @@ export default function Contact() {
                     <label className="text-sm font-medium">Message</label>
                     <Textarea {...register("message")} placeholder="Tell me about your project..." className="min-h-[150px]" />
                   </div>
-                  <Button type="submit" className="w-full gap-2">
+                  <AnimatedButton type="submit" className="w-full gap-2">
                     <Send className="w-4 h-4" /> Send Message
-                  </Button>
+                  </AnimatedButton>
                 </form>
               </CardContent>
             </Card>

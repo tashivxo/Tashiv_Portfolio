@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import { Award, Calendar, ExternalLink, FileText } from "lucide-react";
 
 interface CertCardProps {
@@ -40,7 +40,7 @@ export default function CertCard({ name, issuer, date, pdfUrl, index }: CertCard
           </div>
           
           {pdfUrl && (
-            <Button variant="ghost" size="sm" className="w-full justify-between group mt-2 border border-border/50 hover:bg-primary/10" asChild>
+            <AnimatedButton variant="ghost" size="sm" className="w-full justify-between group mt-2 border border-border/50 hover:bg-primary/10" asChild>
               <a href={pdfUrl} target="_blank" rel="noopener noreferrer">
                 <span className="flex items-center gap-2">
                   <FileText className="w-4 h-4" />
@@ -48,7 +48,7 @@ export default function CertCard({ name, issuer, date, pdfUrl, index }: CertCard
                 </span>
                 <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
               </a>
-            </Button>
+            </AnimatedButton>
           )}
         </CardContent>
       </Card>

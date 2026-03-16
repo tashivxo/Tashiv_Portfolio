@@ -43,8 +43,8 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%; /* Electric Blue */
-    --primary-foreground: 222 47% 11%;
+    --primary: 210 100% 50%; /* Vivid Cobalt Blue */
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 217 19% 27%;
     --secondary-foreground: 210 40% 98%;
@@ -52,8 +52,8 @@
     --muted: 217 19% 27%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 210 40% 98%;

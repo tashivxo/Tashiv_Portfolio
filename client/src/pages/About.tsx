@@ -3,7 +3,7 @@ import SectionHeader from "@/components/ui/section-header";
 import { personalInfo } from "@/lib/data";
 import { motion } from "framer-motion";
 import aboutImage from "@assets/generated_images/developer_working_in_a_high-tech_environment.png";
-import { Button } from "@/components/ui/button";
+import { AnimatedButton } from "@/components/ui/animated-button";
 import { Download } from "lucide-react";
 
 export default function About() {
@@ -47,10 +47,12 @@ export default function About() {
             </div>
 
             <div className="pt-4">
-              <Button className="gap-2">
-                <Download className="w-4 h-4" />
-                Download Resume
-              </Button>
+              <AnimatedButton className="gap-2" asChild>
+                <a href="/resume.pdf" download>
+                  <Download className="w-4 h-4" />
+                  Download Resume
+                </a>
+              </AnimatedButton>
             </div>
           </motion.div>
         </div>
