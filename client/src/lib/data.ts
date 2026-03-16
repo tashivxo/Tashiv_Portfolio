@@ -7,8 +7,8 @@ const pdfPrefix = "/attached_assets/";
 
 export const personalInfo = {
   name: "Tashiv Govender",
-  title: "Full Stack & Backend Software Developer",
-  subtitle: "GenAI & Cloud Enthusiast | Automation & Problem-Solving Driven",
+  title: "Full Stack Software Developer",
+  subtitle: "Gen AI, Cyber Security & Cloud Enthusiast",
   email: "tashivxo@gmail.com",
   linkedin: "https://www.linkedin.com/in/tashiv-govender-a412b921b/",
   github: "https://github.com", // Placeholder as per request
