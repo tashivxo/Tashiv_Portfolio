@@ -132,7 +132,7 @@ export default function DraggablePhoto() {
     };
   }, [spawnGhost, checkBoundaryCollision]);
 
-  const imageSrc = `${import.meta.env.BASE_URL}me.png`;
+  const imageSrc = `${import.meta.env.BASE_URL}Me.png`;
 
   return (
     <div
